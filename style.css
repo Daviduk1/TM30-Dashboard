@@ -1,0 +1,93 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,400;1,500&family=Inter:wght@400;500;700&family=League+Spartan:wght@500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,700&display=swap');
+
+body {
+    background-color: #E5E5E5;
+    font-family: Inter;
+}
+
+nav #logo {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav ul li a {
+    color:white !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+.header .home {
+    font-size: 16px;
+    color: gray;
+    
+}
+
+.header .home span {
+    border-bottom: 1px solid black;
+}
+
+.user-section {
+    position: relative;
+    bottom: 2rem;
+    right: 20px;
+}
+
+@media screen  and (max-width: 700px){
+    .user-section {
+        margin-bottom: 6rem;
+        margin-left: 1.2rem;
+        margin-top: 4rem;
+    }
+    #home {
+        margin-top: 5rem;
+    }
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table td {
+        text-align: right;
+        width:100% ;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

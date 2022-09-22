@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>TM30 DASHBOARD</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary px-5  m-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logo" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+            </ul>
+            <div>
+              <button onclick="showUser()">
+                <img src="./Images/Ellipse 1.png" alt="">
+
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="head" class="header mb-0 d-md-flex align-items-middle justify-content-between m-4">
+        <p class="home">Home / <span>Reports and Insight</span> </p>
+
+        <div class="user-section hide">
+            <div class="card shadow"  style="width: 14rem; height: 3rem" id="reverse">
+                <ul class="list-group list-group-flush ">
+                    <li class="d-flex align-items-middle list-group-item justify-content-between px-3">
+                        <img src="./Images/Frame (1).png" alt="" style="width: 30px; height: 30px ">
+                        <div class="ms-2">
+                            <p class="mb-0 fs-6" style="font-size: 14px; color:#4A5568">My profile</p>
+                            <p class="mb-0  text-muted" style="font-size: 12px;">Change settings of your account.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-middle list-group-item ">
+                        <img src="./Images//vector.png" alt="" style="width: 20px; height: 20px " class="ms-2">
+                        <div class="ms-4" >
+                            <p style="font-size: 14px; color:red">Logout</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="row gap-4 m-3 overflow-hidden" id="create">
+          <div class="col-md-3">
+              <div class="card shadow">
+                  <div class="card-body">
+                    <p class="mb-0" style="font-size: 16px;">Why do you create a startup?</p>
+                    <p style="font-size: 14px; color:#A0AEC0">Trends</p>
+                    <div class="text-center">
+                      <img src="./Images/Pie Blue (1).png" alt="" class="img-fluid ">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-evenly text-center mt-4">
+                      <div>
+                        <p style="width:10px; height:10px; border-radius:50%; background-color:#E5E5E5"></p>
+                        <p style="font-size:13px; font-weight:400">DUNNO</p>
+                      </div>
+                      <div>
+                        <p style="width:10px; height:10px; border-radius:50%; background-color:#855CF8"></p>
+                        <p  style="font-size:13px; font-weight:400">I'm boring</p>
+                      </div>
+                      <div>
+                        <p style="width:10px; height:10px; border-radius:50%; background-color:#263238"></p>
+                        <p  style="font-size:13px; font-weight:400">Money</p>
+                      </div>
+                      <div>
+                        <p style="width:10px; height:10px; border-radius:50%; background-color:#E5E5E5"></p>
+                        <p  style="font-size:13px; font-weight:400">Fund</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-8" id="create-absolute">
+              <div class="card shadow overflow-hidden">
+                  <h4 class="mx-4 mb-0 mt-3 fs-6">Employees</h4>
+                  <div class="shadow  overflow-hidden m-4">
+                      <table class="table mt-3">
+                          <thead>
+                              <tr style="font-size:12px; color: rgba(0, 0, 0, 0.5)">
+                                  <th>Employee</th>
+                                  <th>Last Login</th>
+                                  <th>Department</th>
+                                  <th>Status</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td data-label="employment">
+                                      <div class="d-flex align-items-center">
+                                          <img src="./Images/Base.png" alt="" class="">
+                                          <div class="ms-3">
+                                              <p class="fw-bold mb-0" style="font-size: 12px;">Logan Henderson</p>
+                                              <p class="text-muted mb-0 " style="font-size: 12px;">logan@company.com</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-label="last-login">
+                                      <div>
+                                          <p class="fw-bold mb-0" style="font-size: 12px;">September 20, 2019</p>
+                                          <p class="text-muted mb-0" style="font-size: 12px;">2 days ago</p>
+                                      </div>
+                                  </td>
+                                  <td data-label="department" class="fw-bold" style="font-size: 12px;">Accounting</td>
+                                  <td data-label="links">
+                                      <button type="button" class="btn btn-link btn-sm btn-rounded" style="text-decoration:none; color:#3CC13B">Active</button>
+                                  </td>
+                                  <td>
+                                      <img src="./Images/Vector1.png" alt="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td data-label="employment">
+                                      <div class="d-flex align-items-center mb-0">
+                                          <img src="./Images/avarta-1.png" alt="" class="">
+                                          <div class="ms-3">
+                                              <p class="fw-bold mb-0" style="font-size: 12px;">Susan Carison</p>
+                                              <p class="text-muted mb-0" style="font-size: 12px;">susi@company.com</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-label="last-login">
+                                      <div>
+                                          <p class="fw-bold mb-0" style="font-size: 12px;">September 22, 2019</p>
+                                          <p class="text-muted mb-0" style="font-size: 12px;">5 hours ago</p>
+                                      </div>
+                                  </td>
+                                  <td data-label="department" class="fw-bold" style="font-size: 12px;">Development</td>
+                                  <td data-label="links">
+                                      <button type="button" class="btn btn-link btn-sm " style="text-decoration:none; color:#F03738">Inactive</button>
+                                  </td>
+                                  <td>
+                                      <img src="./Images/Vector1.png" alt="">
+                                  </td>
+                              </tr>
+                              
+                              <tr>
+                                  <td data-label="employment">
+                                      <div class="d-flex align-items-center">
+                                          <img src="./Images/Avatar33.png" alt="" class="">
+                                          <div class="ms-3">
+                                              <p class="fw-bold mb-0" style="font-size: 12px;">Markus Benes</p>
+                                              <p class="text-muted mb-0" style="font-size: 12px;">markus@company.com</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-label="last-login">
+                                      <div>
+                                          <p class="fw-bold mb-0" style="font-size: 12px;">September 18, 2019</p>
+                                          <p class="text-muted mb-0" style="font-size: 12px;">4 days ago</p>
+                                      </div>
+                                  </td>
+                                  <td data-label="department" class="fw-bold" style="font-size: 12px;">Development</td>
+                                  <td data-label="links">
+                                      <button type="button" class="btn btn-link btn-sm " style="text-decoration:none; color:#3CC13B">Active</button>
+                                  </td>
+                                  <td>
+                                      <img src="./Images/Vector1.png" alt="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td data-label="employment">
+                                      <div class="d-flex align-items-center">
+                                          <img src="./Images/Base-1.png" alt="" class="">
+                                          <div class="ms-3">
+                                              <p class="fw-bold mb-0" style="font-size: 12px;">Marie Stephan</p>
+                                              <p class="text-muted mb-0" style="font-size: 12px;">marie@company.com</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-label="last-login">
+                                      <div>
+                                          <p class="fw-bold mb-0" style="font-size: 12px;">September 22, 2019</p>
+                                          <p class="text-muted mb-0" style="font-size: 12px;">2 days ago</p>
+                                      </div>
+                                  </td>
+                                  <td data-label="department" class="fw-bold" style="font-size: 12px;">Human Resources</td>
+                                  <td data-label="links">
+                                      <button type="button" class="btn btn-link btn-sm " style="text-decoration:none; color:#3CC13B">Active</button>
+                                  </td>
+                                  <td>
+                                      <img src="./Images/Vector1.png" alt="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td data-label="employment">
+                                      <div class="d-flex align-items-center">
+                                          <img src="./Images/Base.png" alt="" class="">
+                                          <div class="ms-3">
+                                              <p class="fw-bold mb-0" style="font-size: 12px;">Jacob Gibson</p>
+                                              <p class="text-muted mb-0" style="font-size: 12px;">jacob@company.com</p>
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td data-label="last-login">
+                                      <div>
+                                          <p class="fw-bold mb-0" style="font-size: 12px;">September 20, 2019</p>
+                                          <p class="text-muted mb-0" style="font-size: 12px;">3 hours ago</p>
+                                      </div>
+                                  </td>
+                                  <td data-label="department" class="fw-bold" style="font-size: 12px;">Sales</td>
+                                  <td data-label="links">
+                                      <button type="button" class="btn btn-link btn-sm " style="text-decoration:none; color:#3CC13B">Active</button>
+                                  </td>
+                                  <td>
+                                      <img src="./Images/Vector1.png" alt="">
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  
+          
+                  </table>
+              </div>
+  
+          </div>
+      </div>
+      </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
